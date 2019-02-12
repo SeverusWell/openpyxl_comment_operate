@@ -4,7 +4,7 @@ from openpyxl import load_workbook
 from openpyxl import Workbook
 from openpyxl.comments import Comment
 
-source_wb = load_workbook("input.xlsx")
+source_wb = load_workbook("split.xlsx")
 source_sheet = source_wb.active
 
 target_wb = Workbook()
@@ -22,4 +22,4 @@ for inx, row in enumerate(source_sheet.iter_rows()):
                 target_sheet[cell.column + str(target_current_row)].comment = Comment(cell.value, 'Python')
         target_current_row += 1
 
-target_wb.save('output.xlsx')
+target_wb.save('merged.xlsx')
