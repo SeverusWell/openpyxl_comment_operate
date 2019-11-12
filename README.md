@@ -19,7 +19,7 @@
 
 ![](https://ws2.sinaimg.cn/large/006tNc79ly1g03hfzg88sj306p047gln.jpg)
 
-  将原始Excel表格更名为`input.xlsx`放到项目目录下,执行拆分命令:
+  将原始Excel表格更名为`source.xlsx`放到项目目录下,执行拆分命令:
 
 ```
 python openpyxl_split.py
@@ -37,6 +37,6 @@ python openpyxl_split.py
 python openpyxl_merge.py
 ```
 
-  执行成功后生成合并后的目标文件`merged.xlsx`.
+  执行成功后生成合并后的目标文件`source.xlsx`.
 
 ![image-20190212113346005](https://ws4.sinaimg.cn/large/006tNc79ly1g03hjms57lj30bf083aao.jpg)
