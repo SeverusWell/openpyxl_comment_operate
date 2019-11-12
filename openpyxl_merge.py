@@ -22,4 +22,4 @@ for inx, row in enumerate(source_sheet.iter_rows()):
                 target_sheet[cell.column + str(target_current_row)].comment = Comment(cell.value, 'Python')
         target_current_row += 1
 
-target_wb.save('merged.xlsx')
+target_wb.save('source.xlsx')
